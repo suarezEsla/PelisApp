@@ -1,0 +1,350 @@
+    /*FUENTES*/
+    
+    @font-face {
+        font-family: "fjalla";
+        src: url(../fonts/fjalla.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Roboto-Regular";
+        src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Roboto-Regular";
+        src: url(../fonts/RobotoSlab.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "TrainOne";
+        src: url(../fonts/TrainOne.ttf);
+        format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "Anton-Regular";
+        src: url(../fonts/Anton-Regular.ttf);
+        format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "ShadowsIntoLight";
+        src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+        format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+        background: rgb(255, 253, 253);
+        text-align: justify;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 14px;
+        color: black;
+    }
+    
+    .izq {
+        text-align: left;
+    }
+    
+    .der {
+        text-align: right;
+    }
+    
+    #container {
+        margin: 0 auto;
+        width: 900px;
+        /* background-image: url('../floral.jpg'); */
+        background-color: #262626;
+        border: solid 1px black;
+    }
+    
+    #header {
+        background-color: #262626;
+        border: 3px solid #262626;
+        text-align: center;
+        padding: 20px;
+        color: #F9C700;
+        font-family: 'TrainOne', Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        width: 95%;
+    }
+    
+    #header h1 {
+        font-size: 70px;
+        margin: 0;
+    }
+    
+    #header h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    #content {
+        /* background: whitesmoke; */
+        border: 3px solid #262626;
+        clear: left;
+        padding: 20px;
+        /* background-image: url('../floral.jpg'); */
+        background-color: #262626;
+        width: 95%;
+    }
+    
+    .fondo {
+        border: 1px solid black;
+        clear: left;
+        padding: 20px;
+        background-color: #262626;
+        width: 100%;
+    }
+    
+    #content h2 {
+        text-align: center;
+        color: #31302c;
+        font-family: 'fjalla', Helvetica;
+        text-shadow: 10px 10px 16px rgba(144, 172, 150, 1);
+        font-size: 60px;
+        margin: 0 0 .5em;
+    }
+    
+    #content p {
+        color: #31302c;
+        font-family: 'fjalla', Helvetica;
+        text-shadow: 10px 10px 16px rgba(144, 172, 150, 1);
+        font-size: 22px;
+        margin: 0 0 .5em;
+    }
+    
+    #aviso {
+        background: white;
+        color: red;
+    }
+    
+    #info {
+        color: navy;
+        text-align: center;
+    }
+    
+    li {
+        padding: 18px;
+    }
+    
+    #aviso {
+        background: red;
+        color: black;
+    }
+    /* /* /*Estilos del menú*/
+    
+    .menu {
+        width: 120%;
+        margin-bottom: 90px;
+        text-decoration: none;
+    }
+    
+    .menu ul li:hover {
+        background: linear-gradient(to bottom, #e9bd2c 0px, #b8bbbb 100%);
+        text-decoration: none;
+    }
+    
+    .menu ul {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        width: 20%;
+        margin: 10px auto;
+    }
+    
+    .imagenes img {
+        width: 100%;
+    }
+    
+    .imagenes img:hover {
+        opacity: 78%;
+        transition: 0.5s;
+    }
+    
+    .menu {
+        width: 130%;
+    }
+    
+    .menu ul li {
+        background-image: url('../so-white.png');
+        float: left;
+        line-height: 25px;
+        border: 1px solid #726f6f;
+        border-radius: 3%;
+        box-shadow: 0px 2px 2px #aaaaaa, 2px 3px 4px #ccc inset;
+        width: 18%;
+        text-decoration: none;
+    }
+    
+    .menu ul li a {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        color: black;
+        width: 95%;
+        text-align: center;
+        font-family: 'Anton-Regular', Helvetica;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    /*Buscador*/
+    
+    .buscador h1 {
+        color: #f9c700;
+    }
+    /*Botones*/
+    
+    input[type="submit"],
+    input[type="button"] {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: block;
+        border-radius: 2px;
+        color: rgb(44, 42, 42);
+        /* background: #86e2ec; */
+        background: linear-gradient(to bottom, #f2f2f2 0px, #b8bbbb 100%);
+        /* background: #f9c700;
+        border: 1px solid #156785; */
+        cursor: pointer;
+        padding: 7px;
+        font-family: 'Anton-Regular', Helvetica;
+        font-size: 20px;
+    }
+    
+    input[type="submit"]:hover {
+        background: linear-gradient(to bottom, #e9bd2c 0px, #b8bbbb 100%);
+    }
+    
+    input[type="button"]:hover {
+        background: linear-gradient(to bottom, #e9bd2c 0px, #b8bbbb 100%);
+    }
+    
+    label {
+        color: white;
+    }
+    
+    input[type="text"],
+    input[type="file"],
+    input[type="password"],
+    input[type="email"] {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: block;
+        border-radius: 2px;
+        color: rgb(44, 42, 42);
+        background: #949899;
+        border: 1px solid #333435;
+        cursor: pointer;
+        padding: 7px;
+    }
+    
+    a {
+        color: rgb(59, 59, 55);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    /*Backtotop*/
+    
+    .backtotop p a {
+        font-size: 60px;
+        float: right;
+        color: #f9c700;
+        margin-right: 200px;
+    }
+    
+    .backtotop p a:hover {
+        color: #86e2ec;
+        transition: 1.5s;
+    }
+    /*Estilos de las imágenes*/
+    
+    img {
+        height: 150px;
+        width: 200px;
+        border-radius: 5%;
+        border: 1px solid black;
+        box-shadow: 0px 1px 1px #eee;
+        overflow: hidden;
+    }
+    /*Estilos de la tabla*/
+    
+    table {
+        width: 80%;
+        background-color: #efdfa5;
+    }
+    
+    table a {
+        font-family: 'Anton-Regular', Helvetica;
+        font-size: 20px;
+    }
+    
+    table a:hover {
+        background: linear-gradient(to bottom, #f2f2f2 0px, #b8bbbb 100%);
+    }
+    
+    table,
+    th,
+    td {
+        /* border: 0.5px solid black; */
+        border-bottom: 0.5px solid black;
+        border-collapse: collapse;
+        box-shadow: 0px 2px 2px #aaaaaa, 2px 3px 4px #ccc inset;
+        padding: 4px;
+        box-shadow: 0px 1px 1px #eee;
+        /* background-image: url('../so-white.png'); */
+        background-color: whitesmoke;
+        font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    }
+    
+    th {
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    .usuarios {
+        float: right;
+    }
+    
+    .usuarios h1 {
+        color: #f9c700;
+    }
+    
+    #footer {
+        color: white;
+        background: blue;
+        text-align: center;
+        padding: 20px;
+        margin: 0px;
+        height: 1%;
+    }
+    
+    .footer {
+        text-align: center;
+        color: white;
+    }
