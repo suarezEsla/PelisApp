@@ -207,17 +207,10 @@ function ctlPeliVotar()
 
 function ctlPeliActualizar(){
     
-    //Var_export
-    /* echo "<pre>" . var_export($_FILES, true) . "</pre>"; */
-
    //Sacar código Youtube
     $video = $_POST['video'];
     $yt = substr($video, strrpos($video, '/')+1);
     $video = 'https://www.youtube.com/embed/'.$yt;
-
-    /* echo $public_file; */
-    /* var_dump($_POST); */
-    
     $public_file = $_POST['imagen'];
     // Check if image file is a actual image or fake image
     if ($_FILES["nueva_imagen"]["tmp_name"]) {

@@ -200,6 +200,8 @@ class ModeloUserDB
 
             $uobj = $stmt->fetch();
             return $uobj;
+        }else{
+            echo "La película que buscas no existe.";
         }
         return null;
     }
@@ -218,6 +220,8 @@ class ModeloUserDB
 
             $uobj = $stmt->fetch();
             return $uobj;
+        } else {
+            echo "La película que buscas no existe.";
         }
         return null;
     }
@@ -236,6 +240,8 @@ class ModeloUserDB
 
             $uobj = $stmt->fetch();
             return $uobj;
+        } else {
+            echo "La película que buscas no existe.";
         }
         return null;
     }
