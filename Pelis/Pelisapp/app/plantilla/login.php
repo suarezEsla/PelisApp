@@ -13,13 +13,13 @@ if (isset($_POST['submit'])) {
     $result = $query->fetch(PDO::FETCH_ASSOC);
 
     if (!$result) {
-        echo '<p class="error">Username password combination is wrong!</p>';
+        echo '<p class="error">Usuario o contraseña incorrectos!</p>';
     } else {
         if (password_verify($password, $result['PASSWORD'])) {
             $_SESSION['user_id'] = $result['ID'];
-            echo '<p class="success">Congratulations, you are logged in!</p>';
+            echo '<p class="success">Logueado correctamente!</p>';
         } else {
-            echo '<p class="error">Username password combination is wrong!</p>';
+            echo '<p class="error">Usuario o contraseña incorrectos!</p>';
         }
     }
 }

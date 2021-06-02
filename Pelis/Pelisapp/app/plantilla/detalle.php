@@ -67,7 +67,7 @@ ob_start();
                 <h2>Precio de alquiler: <?php echo $pelicula->alquiler ?></h2>
             </li>
             <li class="list-group-item">
-                <h2>Valoración: <?php $pelicula->estrellas ?></h2>
+                <h2>Valoración: <?php echo $pelicula->estrellas ?></h2>
             </li>
             <li class="list-group-item">
                 <h2><iframe width="560" height="315" src="<?php echo $pelicula->video  ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h2>
@@ -78,7 +78,7 @@ ob_start();
 
         </ul>
         <div class="card-body">
-            <a href="index.php?orden=FormularioVotaciones" class="btn btn-warning">Valorar</a>
+            <a href="index.php?orden=FormularioVotaciones&codigo=<?php echo $pelicula->codigo_pelicula ?>" class="btn btn-warning">Valorar</a>
         </div>
     </div>
 

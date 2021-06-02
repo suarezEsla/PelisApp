@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <form action="index.php?orden=Votar" method="POST">
+<?php
+$codigo = $_GET['codigo'];
+?>
+    <form action="index.php?orden=Votar&codigo=<?php echo $codigo ?>" method="POST">
 
         ⭐<select name="estrellas" id="">
             <option value="1">1</option>
